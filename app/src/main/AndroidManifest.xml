@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.invictus_shubham">
+
+    <!--//Reading External Storage Permission-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Invictus J09 SMS"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.InvictusShubham">
+        <activity
+            android:name=".UploadingPhoto"
+            android:exported="false" />
+        <activity
+            android:name=".Sem2"
+            android:exported="false" />
+        <activity
+            android:name=".Sem1"
+            android:exported="false" />
+        <activity
+            android:name=".FilterBranch"
+            android:exported="false" />
+        <activity
+            android:name=".SellerPage"
+            android:exported="false" />
+        <activity
+            android:name=".FilterSemester"
+            android:exported="false" />
+        <activity
+            android:name=".ChooseBuyerOrSeller"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePage"
+            android:exported="false" />
+        <activity
+            android:name=".ListingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
+
+        <activity android:name=".Registeration"
+            android:exported="false"/>
+
+        <activity android:name=".Dashboard"
+            android:exported="false"/>
+
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

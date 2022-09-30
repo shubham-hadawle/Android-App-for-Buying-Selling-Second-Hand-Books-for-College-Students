@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductProfile">
+
+    <ImageView
+        android:id="@+id/BookImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="50dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/BookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Book Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/Author"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BookImage" />
+
+    <TextView
+        android:id="@+id/Author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/Cost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Author Name" />
+
+    <TextView
+        android:id="@+id/SellerName"
+        android:layout_width="171dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-black"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Cost"
+        tools:text="Seller Name" />
+
+    <EditText
+        android:id="@+id/SellerContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Seller Contact No."
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SellerName"
+        app:layout_constraintVertical_bias="0.236" />
+
+    <EditText
+        android:id="@+id/Cost"
+        android:layout_width="102dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Book Cost "
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="316dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
